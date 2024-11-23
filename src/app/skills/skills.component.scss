@@ -1,0 +1,51 @@
+// Define the color variables at the top of the file
+$primary-color: #007bff;
+$secondary-color: #f4f4f4;
+$text-color: #333;
+
+
+
+.skills {
+    background-color: $secondary-color;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .skills-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  
+      .skill {
+        h3 {
+          font-size: 1.2em;
+          margin-bottom: 5px;
+        }
+  
+        .progress {
+          background-color: #e0e0e0;
+          height: 10px;
+          border-radius: 5px;
+          .progress-bar {
+            height: 100%;
+            background-color: $primary-color;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .skills-list {
+        display: block;
+      }
+    }
+  }
+  

@@ -1,0 +1,42 @@
+// Define the color variables at the top of the file
+$primary-color: #007bff;
+$secondary-color: #f4f4f4;
+$text-color: #333;
+
+
+.experience {
+    background-color: $secondary-color;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  
+    h2 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .job {
+      margin-bottom: 20px;
+  
+      h3 {
+        font-size: 1.5em;
+        color: $primary-color;
+      }
+  
+      .date {
+        font-size: 1.1em;
+        color: gray;
+      }
+  
+      ul {
+        margin-top: 10px;
+        li {
+          font-size: 1.1em;
+          color: $text-color;
+        }
+      }
+    }
+  }
+  

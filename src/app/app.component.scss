@@ -1,0 +1,60 @@
+.cv-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .left-column,
+  .right-column {
+    width: 48%; /* Ensure each column takes almost half of the space */
+  }
+  
+  .divider {
+    width: 1px;
+    background-color: #000; /* Black divider line */
+    margin: 0 20px; /* Space around the divider */
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  .skills ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create a 2-column layout for skills */
+    gap: 10px;
+  }
+  
+  .skills li {
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+    .cv-container {
+      flex-direction: column; /* Stack columns on smaller screens */
+      align-items: center;
+    }
+  
+    .left-column, .right-column {
+      width: 100%; /* Full width on small screens */
+      margin-bottom: 20px;
+    }
+  
+    .divider {
+      display: none; /* Hide the divider on small screens */
+    }
+  }
+  
